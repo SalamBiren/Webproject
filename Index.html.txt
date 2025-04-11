@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Clone</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .navbar{
+            background-color: #1db954;
+            display:flex;
+            top:0;
+            gap: 40px;
+            justify-content: center;
+            padding: 15px 0;
+            top: 0;
+            overflow: hidden;
+        }
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: #1db954;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 16px;
+      overflow: unset;
+      padding: 10px 0;
+     
+    }
+
+    .card, .card2 {
+      background-color: #1f1f1f;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      flex: 0 0 auto;
+    }
+
+    .card2 {
+      width: 150px;
+      height: 150px;
+      border-radius: 0;
+    }
+
+    .circle-card {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #1f1f1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      text-align: center;
+     
+    }
+
+    .card-container {
+      text-align: center;
+      width: 100px;
+    }
+
+    .card2-container {
+      text-align: center;
+      width: 150px;
+      
+    }
+
+    .title {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .sub-text {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card img{
+      height: 100px;
+      width: 100px;
+      border-radius: 1rem;
+    }
+    .circle-card img{
+      height: 110px;
+      width: 110px;
+      border-radius: 50%;
+      border: 2px solid rgb(12, 245, 90);
+    }
+    .card2 img{
+      height: 150px;
+      width: 150px;
+      border-radius:0 ; 
+    }
+    footer{
+        background-color:rgb(127, 231, 127);
+        color: white;
+        font-size: 20px;
+        padding-left: 0;
+    } 
+  </style>
+</head>
+<body>
+  <div>
+    <div class="navbar">
+    <a href="#Trending">Trending</a>
+    <a href="#Popular">Popular</a>
+    <a href="#Albums">Albums</a>
+    <a href="#Radio">Radio</a>
+    <a href="#Featured">Featured</a>
+  </div>
+  <main>
+  <div class="section" id="Trending">
+    <h2>Trending Songs</h2>
+    <div class="flex-row">
+      <div class="card-container">
+        <div class="card"><img src="SP1.png"></div>
+        <div class="title">Feeling</div>
+        <div class="sub-text">Yasser Desai</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="SP2.png"></div>
+        <div class="title">Khairiyat</div>
+        <div class="sub-text">Arijit Singh</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="SP3.png"></div>
+        <div class="title">Finding Hop</div>
+        <div class="sub-text">Sachet–Parampara</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="SP4.png"></div>
+        <div class="title">Heeriye</div>
+        <div class="sub-text">Arijit Singh</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="SP5.png"></div>
+        <div class="title">Jhoom</div>
+        <div class="sub-text">Ali Zafar</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp6.png"></div>
+        <div class="title">Patthar Wargi</div>
+        <div class="sub-text">B Praak</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp7.png"></div>
+        <div class="title">Asal Mein</div>
+        <div class="sub-text">Darshan Raval</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp8.png"></div>
+        <div class="title">Obsessed</div>
+        <div class="sub-text">Riar Saab</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="Sp9.png"></div>
+        <div class="title">Chal</div>
+        <div class="sub-text">Sumit Goswami</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp18.png"></div>
+        <div class="title">JUSTICE</div>
+        <div class="sub-text">2021.ALBUM</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp19.png"></div>
+        <div class="title">Purpose</div>
+        <div class="sub-text">2025.ALBUM</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp20.png"></div>
+        <div class="title">Beleive</div>
+        <div class="sub-text">2012.ALBUM</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="Popular">
+    <h2>Popular Artists</h2>
+    <div class="flex-row">
+      <div class="card-container">
+      <div class="circle-card"><img src="Spc10.png"></div>
+      <div class="title">PRITAM</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc1.png"></div>
+      <div class="title">BLESSED MANE</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc2.png"></div>
+      <div class="title">IROKZ</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc3.png"></div>
+      <div class="title">AKIAURA</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc4.png"></div>
+      <div class="title">ETERNXLKZ</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc5.png"></div>
+      <div class="title">GLXXMSTRIDER</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc6.png"></div>
+      <div class="title">STM</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc7.png"></div>
+      <div class="title"> MARSHMELLO</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="SPC8.png"></div>
+      <div class="title">PRASANT PANDAY</div>
+      </div>
+      <div class="card-container">
+      <div class="circle-card"><img src="spc9.png"></div>
+      <div class="title">ISQ</div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="section" id="Albums">
+    <h2>Popular Albums</h2>
+    <div class="flex-row">
+      <div class="card-container">
+        <div class="card"><img src="sp10.png"></div>
+        <div class="title">Woh Jahaan Hai Tera</div>
+        <div class="sub-text">Shreya Ghoshal</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp11.png"></div>
+        <div class="title">Sanam Teri Kasam</div>
+        <div class="sub-text">Ankit Tiwari</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp12.png"></div>
+        <div class="title">Young GOAT</div>
+        <div class="sub-text">Sidhu Moosewala</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp13.png"></div>
+        <div class="title">Aashiqui 2</div>
+        <div class="sub-text">Arijit Singh</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp14.png"></div>
+        <div class="title">Glory</div>
+        <div class="sub-text">Britney Spears</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp15.png"></div>
+        <div class="title">Raabta</div>
+        <div class="sub-text">Nikita Gandhi</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp16.png"></div>
+        <div class="title">Unbreakable</div>
+        <div class="sub-text">Arijit Singh</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp17.png"></div>
+        <div class="title">Making Memories</div>
+        <div class="sub-text">Karan Aujla</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp21.png"></div>
+        <div class="title">Not Afriad Anymore</div>
+        <div class="sub-text">Halsey</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp22.png"></div>
+        <div class="title">The Secret Of Us</div>
+        <div class="sub-text">2024.ALBUM</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp23.png"></div>
+        <div class="title">HANNA MONTANA </div>
+        <div class="sub-text">2009.COMPILATION</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="Radio">
+    <h2>Popular Radio</h2>
+    <div class="flex-row">
+      <div class="card-container">
+        <div class="card"><img src="spr1.png"></div>
+        <div class="title">Arijit Singh</div>
+        <div class="sub-text">Radio based on Arijit</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="spr2.png"></div>
+        <div class="title">Shreya Ghoshal</div>
+        <div class="sub-text">Romantic classics</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="spr3.png"></div>
+        <div class="title">Diljit Dosanjh</div>
+        <div class="sub-text">Punjabi Hits</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="spr4.png"></div>
+        <div class="title">KK</div>
+        <div class="sub-text">Evergreen Vibes</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="spr5.png"></div>
+        <div class="title">Sidhu Moosewala</div>
+        <div class="sub-text">Moose Tape</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="spr6.png"></div>
+        <div class="title">Yo Yo Honey Singh</div>
+        <div class="sub-text">Party Beats</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp24.png"></div>
+        <div class="title">One Women Man</div>
+        <div class="sub-text">John Legend</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp25.png"></div>
+        <div class="title">Lies In The Dark</div>
+        <div class="sub-text">Tove Lo</div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img src="sp26.png"></div>
+        <div class="title">Pray</div>
+        <div class="sub-text">JRY,RuthAnne</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="Featured">
+    <h2>Featured Chart</h2>
+    <div class="flex-row">
+      <div class="card2-container">
+        <div class="card2"><img src="spt1.png"></div>
+        <div class="title">Top Songs Global</div>
+        <div class="sub-text">Weekly Global Charts</div>
+      </div>
+      <div class="card2-container">
+        <div class="card2"><img src="spt2.png"></div>
+        <div class="title">Top Songs India</div>
+        <div class="sub-text">Weekly India Charts</div>
+      </div>
+      <div class="card2-container">
+        <div class="card2"><img src="spt3.png"></div>
+        <div class="title">Top 50</div>
+        <div class="sub-text">Most played now</div>
+      </div>
+      <div class="card2-container">
+        <div class="card2"><img src="spt4.png"></div>
+        <div class="title">Viral 50</div>
+        <div class="sub-text">Trending worldwide</div>
+      </div>
+      <div class="card2-container">
+        <div class="card2"><img src="spt5.png"></div>
+        <div class="title">Viral 50 India</div>
+        <div class="sub-text">India's most shared</div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    DESIGENED BY:SALAM BIREN MEITEI<br>
+    BCA 4TH SEMESTER<br>
+    ROLL:BC2170
+  </footer>
+</body>
+</html>
